@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>💖 Para o amor da minha vida 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #ffe6f0, #fff0f5);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .senha-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+    button {
+      background-color: #ff4d88;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .mensagem, .fotos {
+      display: none;
+      padding: 20px;
+      max-width: 600px;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="senha-box" id="login">
+    <h2>💌 Digite a data que mudou tudo 💌</h2>
+    <input type="password" id="senha" placeholder="dd/mm/aaaa">
+    <br>
+    <button onclick="verificarSenha()">Entrar</button>
+  </div>
+
+  <div class="mensagem" id="mensagem">
+    <h1>Paixãoooo, 4 anos... 7 anos... 💞</h1>
+    <p style="line-height: 1.6; font-size: 18px;">
+      Eu nem sei por onde começar, só sei que nesses anos todos vivemos momentos maravilhosos.<br>
+      Passamos por dificuldades também, mas foi tudo isso que fez a gente chegar até aqui — e, ao mesmo tempo, é só o começo da nossa vida juntos.<br><br>
+
+      Me sinto completamente realizado em ter você ao meu lado. Você me completa em todos os sentidos. Obrigado por tanto, meu amor.<br><br>
+
+      Peço que Papai do Céu continue abençoando nossa relação, nos protegendo e nos livrando de todo mal.<br>
+      Que a gente realize nossos sonhos e viva tudo o que a gente planeja e busca com tanto amor.<br><br>
+
+      Sinto até um frio na barriga escrevendo isso, como se fosse a primeira cartinha pra te conquistar kk.<br>
+      Tenho certeza que no fim de semana vou sentir esse friozinho de novo — porque vou estar diante da mulher que sempre pedi a Deus.<br><br>
+
+      Eu te amo demais. Sou muito grato por todos os momentos e ainda vou te fazer a mulher mais feliz desse mundo.<br>
+      Que a gente nunca perca nosso espírito de criança.<br><br>
+
+      Amo nossas brincadeiras, nossos momentos, nossa história.  
+      Te amo, minha gata. 💖<br><br>
+
+      — Do seu amor 💌
+    </p>
+    <div class="fotos">
+      <img src="foto1.jpg">
+      <img src="foto2.jpg">
+      <img src="foto3.jpg">
+      <img src="foto4.jpg">
+      <img src="capa.jpg">
+    </div>
+    <audio id="musica" loop>
+      <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    function verificarSenha() {
+      var senha = document.getElementById('senha').value;
+      if (senha === '30/04/2021') {
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('mensagem').style.display = 'block';
+        document.getElementById('musica').play();
+      } else {
+        alert("Hmm... essa não é a data que eu estou pensando 😘");
+      }
+    }
+  </script>
+</body>
+</html>
